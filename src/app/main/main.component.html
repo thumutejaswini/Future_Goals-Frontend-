@@ -1,0 +1,126 @@
+<p>main works!</p>
+<html>
+<style>
+nav {
+	margin: 27px auto 0;
+
+	position: relative;
+	width: 1015px;
+	height: 50px;
+	background-color: #34495e;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: white;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 180px;
+}
+a:nth-child(5) {
+	width: 140px;
+}
+a:nth-child(6) {
+	width: 110px;
+}
+a:nth-child(7) {
+	width: 110px;
+}
+
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #1abc9c;
+}
+nav .start-courses, a:nth-child(2):hover~.animation {
+	width: 130px;
+	left: 100px;
+	background-color: #e74c3c;
+}
+nav .start-test, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #3498db;
+}
+nav .start-ApplitudeReasoning, a:nth-child(4):hover~.animation {
+	width: 190px;
+	left: 310px;
+	background-color: #9b59b6;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 150px;
+	left: 500px;
+	background-color: #e67e22;
+}
+nav .start-Details, a:nth-child(6):hover~.animation {
+	width: 140px;
+	left: 620px;
+
+	background-color: violet;
+}
+nav .start-gallery, a:nth-child(7):hover~.animation {
+	width: 190px;
+	left: 310px;
+	background-color: #1abc9c;
+}
+body {
+	font-size: 12px;
+	font-family: sans-serif;
+	background:white;
+}
+
+
+
+
+span {
+    color: #2BD6B4;
+}
+</style>
+<body>
+<h1>FUTURE GOAL</h1>
+
+<nav>
+	<a routerLink="" target="_blank">Home</a>
+      <a routerLink="future" target="_blank">Courses</a>
+	<a routerLink=" " target="_blank">Test</a>
+	<a  routerLink="/register">Register</a>
+	<a routerLink="logincreate">Login</a>
+	<a >Contact</a>
+	<a routerLink="/gallery">Gallery</a>
+	<a routerLink="details" >Details</a>
+	
+
+	<div class="animation start-home"> </div>
+</nav>
+
+
+<router-outlet></router-outlet>
+</body>
+</html>
