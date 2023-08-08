@@ -1,4 +1,115 @@
-<p>cse works!</p>
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Dropdown Menu Bar</title>
+  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <nav>
+        
+         <ul>
+            <li><a class="active"routerLink="/main">Home</a></li>
+
+
+			<li>
+				<a href="#">Courses
+				<i class="fas fa-caret-down"></i>
+				</a>
+				<ul> 
+				   <li>
+					  <a href="#">Inter
+					  <i class="fas fa-caret-right"></i>
+					  </a>
+					  <ul>
+						 <li><a routerLink="/interinsert">insert</a></li>
+						 <li><a routerLink="/interget">read</a></li>					
+					  </ul>
+				   </li>
+				   <li>
+					<a href="#">B.tech
+					<i class="fas fa-caret-right"></i>
+					</a>
+					<ul>
+					   <li><a routerLink="/btechinsert">insert</a></li>
+					   <li><a routerLink="/btech">read</a></li>					
+					</ul>
+				 </li>
+				 <li>
+					<a href="#">PG
+					<i class="fas fa-caret-right"></i>
+					</a>
+					<ul>
+					   <li><a href="#">insert</a></li>
+					   <li><a href="#">read</a></li>					
+					</ul>
+				 </li>
+				</ul>
+			 </li>
+
+
+
+
+			 <li>
+				<a href="#">Details
+				<i class="fas fa-caret-down"></i>
+				</a>
+				<ul> 
+				   <li>
+					  <a href="#">Login
+					  <i class="fas fa-caret-right"></i>
+					  </a>
+					  <ul>
+						 <li><a href="#">insert</a></li>
+						 <li><a href="#">read</a></li>					
+					  </ul>
+				   </li>
+				   <li>
+					<a href="#">Register
+					<i class="fas fa-caret-right"></i>
+					</a>
+					<ul>
+					   <li><a routerLink="/registerinsert">insert</a></li>
+					   <li><a routerLink="/registerread">read</a></li>					
+					</ul>
+				 </li>
+				 <li>
+					<a href="#">Contact
+					<i class="fas fa-caret-right"></i>
+					</a>
+					<ul>
+					   <li><a href="#">insert</a></li>
+					   <li><a href="#">read</a></li>					
+					</ul>
+				 </li>
+				 <li>
+					<a routerLink="/feedback">Feedback
+					</a>
+				 </li>
+				</ul>
+			 </li>
+
+
+
+
+
+
+
+			 <li><a href="/future">Course Info</a></li>
+			 <li><a routerLink="/gallery">About</a></li>
+          
+            <li><a routerLink="/main" >Contact</a></li>
+            <li><a routerLink="/create">Feedback</a></li>
+			<li><a routerLink="/profile" >Profile</a></li>
+
+			<li><a routerLink="/main">Logout</a></li>
+         </ul>
+      </nav>
+      <section></section>
+   </body>
+</html>
 <html><body>
     <h2>About Diploma in Computer Science Engineering</h2>
     <img src="assets/dcse.png">

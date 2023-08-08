@@ -1,10 +1,13 @@
 export interface register {
     name:string,
-    email:string,
+    mail:string,
     password:string,
     birth:string,
-    gender:string,
     phonenumber:string
+}
+export interface logincredentials{
+  mail:string,
+  password:string,
 }
 export interface UniqueConstraintError {
     errorNum: Number;

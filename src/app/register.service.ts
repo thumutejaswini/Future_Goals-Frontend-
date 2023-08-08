@@ -32,6 +32,7 @@ Insert(
   );
 }
 Read(username: String): Observable<Read> {
+ 
   return this.http.get<Read>(`${this.url}register/Read${username}`);
 }
 Delete(username: String): Observable<InsertedSuccess> {
@@ -41,7 +42,7 @@ Delete(username: String): Observable<InsertedSuccess> {
   );
 }
 Update(username: String, Details: register) {
-  return this.http.put(`${this.url}login/Update${username}`, Details, {
+  return this.http.put(`${this.url}register/Update${username}`, Details, {
     headers: this.headers,
   });
 }  

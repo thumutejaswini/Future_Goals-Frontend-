@@ -27,11 +27,32 @@ import { DeleteComponent } from './delete/delete.component';
 import { DetailsComponent } from './details/details.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { DgameComponent } from './dgame/dgame.component';
-import { RegisterComponent } from './register/register.component';
-import { LogincreateComponent } from './logincreate/logincreate.component';
-import { LoginreadComponent } from './loginread/loginread.component';
-import { LogindeleteComponent } from './logindelete/logindelete.component';
+
+
 import { MainComponent } from './main/main.component';
+import { MainloginComponent } from './mainlogin/mainlogin.component';
+import { ContactreadComponent } from './contactread/contactread.component';
+import { ContactComponent } from './contact/contact.component';
+import { ProfileComponent } from './profile/profile.component';
+import { HomeComponent } from './home/home.component';
+import { LoginComponent } from './login/login.component';
+import { RegisterinsertComponent } from './registerinsert/registerinsert.component';
+import { LogininsertComponent } from './logininsert/logininsert.component';
+import { InterinsertComponent } from './interinsert/interinsert.component';
+import { IntergetComponent } from './interget/interget.component';
+import { BtechinsertComponent } from './btechinsert/btechinsert.component';
+import { BtechgetComponent } from './btechget/btechget.component';
+import { FeedbackComponent } from './feedback/feedback.component';
+import { RegisterreadComponent } from './registerread/registerread.component';
+import { QRCodeComponent } from 'angularx-qrcode';
+import { QrComponent } from './qr/qr.component';
+import { AdminloginComponent } from './adminlogin/adminlogin.component';
+import { AdminregComponent } from './adminreg/adminreg.component';
+import { AdminComponent } from './admin/admin.component';
+import { CoursesComponent } from './courses/courses.component';
+import { CoursereadComponent } from './courseread/courseread.component';
+import { CrudComponent } from './crud/crud.component';
+import { AdmincoursereadComponent } from './admincourseread/admincourseread.component';
 
 
 const routes: Routes = [
@@ -141,25 +162,108 @@ const routes: Routes = [
     component:DgameComponent
   },
   {
-    path:'register',
-    component:RegisterComponent
+    path:'registerinsert',
+    component:RegisterinsertComponent
   },
-  {
-    path:'logincreate',
-    component:LogincreateComponent
-  },
-  {
-    path:'loginread',
-    component:LoginreadComponent
-  },
-  {
-    path:'logindelete',
-    component:LogindeleteComponent
-  },
+ 
+ 
  {
   path:'main',
   component:MainComponent
- }
+ },
+ {
+  path:'mainlogin',
+  component:MainloginComponent
+ },
+ {
+  path:'contactreadComponent',
+  component:ContactreadComponent
+ },
+ {
+  path:'contact',
+  component:ContactComponent
+ },
+ {
+  path:'profile',
+  component:ProfileComponent
+ },
+ {
+  path:'home',
+  component:HomeComponent
+ },
+ {
+  path:'login',
+  component:LoginComponent
+ },
+ {
+  path:'logininsert',
+  component:LogininsertComponent
+ },
+ {
+ path:'interinsert',
+ component:InterinsertComponent
+},
+{
+  path:'interget',
+  component:IntergetComponent
+},
+{
+  path:'btechinsert',
+  component:BtechinsertComponent
+},
+{
+  path:'btechget',
+  component:BtechgetComponent
+},
+{
+  path:'feedback',
+  component:FeedbackComponent
+},
+{
+  path:'registerread',
+  component:RegisterreadComponent
+},
+{
+  path:'contact',
+  component:ContactComponent
+},
+{
+  path:'qr',
+  component:QrComponent
+},
+{
+  path:'adminlogin',
+  component:AdminloginComponent
+},
+{
+  path:'adminreg',
+  component:AdminregComponent
+},
+{
+  path:'admin',
+  component:AdminComponent
+},
+{
+  path:'courses',
+  component:CoursesComponent
+},
+{
+  path:'courseread',
+  component:CoursereadComponent
+},
+{
+  path:'contactread',
+  component:ContactreadComponent
+},
+{
+  path:'crud',
+  component:CrudComponent
+},
+{
+  path:'admincourseread',
+  component:AdmincoursereadComponent
+}
+ 
  
   
 ];

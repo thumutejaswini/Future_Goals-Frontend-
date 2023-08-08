@@ -1,5 +1,5 @@
 import { Component,OnInit} from '@angular/core';
-import {  Read, StudentDetails } from '../su';
+import {  InsertedSuccess, Read, StudentDetails } from '../su';
 import { CRUDService } from '../crud.service';
 
 @Component({
@@ -12,9 +12,15 @@ export class ReadComponent implements OnInit {
     this.Read('All');
   }
   constructor(private Service: CRUDService) {}
-  username: String = '';
+ username: String = '';
   GotResult: Boolean = false;
-  
+  UpdatedUser: StudentDetails = {
+   username: '',
+  suggestion  : '',
+  quires : '',
+  experience: '',
+  rating:'',
+  };
   Results = [];
   Read(username: String) {
     this.Service.Read(username).subscribe({
@@ -24,6 +30,28 @@ export class ReadComponent implements OnInit {
       },
       error: (Err) => {
         console.log(Err);
+      },
+    });
+  }
+  Update(username: String, Details: StudentDetails) {
+    this.Service.Update(username, Details).subscribe({
+      next: (Data) => {
+        console.log(Data);
+        this.Read('All');
+      },
+      error: (err) => {
+        console.log(err);
+      },
+    });
+  }
+  Delete(username: String) {
+    this.Service.Delete(username).subscribe({
+      next: (Data: InsertedSuccess) => {
+        console.log(Data.rowsAffected);
+        this.Read('All');
+      },
+      error: (Error: any) => {
+        console.log(Error);
       },
     });
   }

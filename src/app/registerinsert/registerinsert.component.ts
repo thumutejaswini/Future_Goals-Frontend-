@@ -1,30 +1,26 @@
-import { Component,OnInit, OnDestroy } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import {
   InsertedSuccess,
- register,
+  register,
   UniqueConstraintError,
 } from '../register';
 import { Subscription } from 'rxjs';
-import { RegisterService} from '../register.service';
+import { RegisterService } from '../register.service';
 @Component({
   selector: 'app-registerinsert',
   templateUrl: './registerinsert.component.html',
   styleUrls: ['./registerinsert.component.css']
 })
 export class RegisterinsertComponent implements OnInit, OnDestroy {
-  constructor(private Service:RegisterService) {}
-  ngOnInit() {}
+  constructor(private Service: RegisterService) { }
+  ngOnInit() { }
   Subscription: Subscription = new Subscription();
-  User: register  = {
-    name:'',
-    email:'',
-    password:'',
-    birth:'',
-    gender:'',
-    phonenumber:'',
-
-
-
+  User: register = {
+    name: '',
+    mail: '',
+    password: '',
+    birth: '',
+    phonenumber: '',
   };
   SuccessMsg = '';
   ErrorMsg = '';
@@ -45,7 +41,7 @@ export class RegisterinsertComponent implements OnInit, OnDestroy {
     });
     // this the another syntax for the Subscribe Its advanced Handling everything
   }
-  
+
   ngOnDestroy() {
     this.Subscription.unsubscribe();
   }

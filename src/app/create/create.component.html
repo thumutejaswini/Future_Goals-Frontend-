@@ -1,3 +1,39 @@
+<!DOCTYPE html>
+<!-- Created By CodingNepal -->
+<html lang="en" dir="ltr">
+   <head>
+      <meta charset="utf-8">
+      <title>Dropdown Menu Bar</title>
+  
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+   </head>
+   <body>
+      <nav>
+        
+         <ul>
+            <li><a class="active"routerLink="/main">Home</a></li>
+
+
+			<li>
+				<a routerLink="courseread">Courses</a></li>
+
+
+
+
+
+
+
+			 <li><a routerLink="/qr" >course information</a></li>
+			 <li><a routerLink="/gallery">About</a></li>
+          
+            <li><a routerLink="/create">Feedback</a></li>
+			<li><a routerLink="/profile" >Profile</a></li>
+
+			<li><a routerLink="/mainlogin">Logout</a></li>
+         </ul>
+      </nav>
+    
+
 <div class="form-group w-50 d-block mx-auto">
     <label for="Name" class="form-label">UserName:</label>
     <input type="text" name="Name" id="Name" class="form-control" [(ngModel)]="User.username">
