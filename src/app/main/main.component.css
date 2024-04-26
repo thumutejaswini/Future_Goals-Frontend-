@@ -80,3 +80,11 @@
     background-size: cover;
     height: 100vh;
   }
+  body{
+   /* background-image: url("https://c8.alamy.com/comp/2CFRRK9/lettering-education-globe-and-school-books-are-drawn-with-chalk-on-blackboard-2CFRRK9.jpg"); */
+    /* background-image: url("https://img.freepik.com/premium-photo/education-background-with-colorful-stationery_8087-1663.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("https://c0.wallpaperflare.com/preview/264/169/201/book-read-student-students-thumbnail.jpg");
+   
+  }

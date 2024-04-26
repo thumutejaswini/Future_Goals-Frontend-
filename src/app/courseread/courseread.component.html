@@ -35,11 +35,11 @@
 
 
           <li><a routerLink="/qr" >course information</a></li>
-			 <li><a routerLink="/gallery">About</a></li>
+			 <!-- <li><a routerLink="/gallery">About</a></li> -->
           
         
             <li><a routerLink="/create">Feedback</a></li>
-			<li><a routerLink="/profile" >Profile</a></li>
+			<!-- <li><a routerLink="/profile" >Profile</a></li> -->
 
 			<li><a routerLink="/main">Logout</a></li>
          </ul>
@@ -57,7 +57,7 @@
     <div class="d-flex my-2">
         <!-- <input type="submit" value="Get all" class="btn btn-primary" (click)="Read('All')"> -->
         <input type="submit" [value]="'search'" class="btn btn-primary mx-1" (click)="Read(course_name)">
-    <a routerLink="/list"><input type="submit" value="List of courses" class="btn btn-primary mx-1" ></a>
+    <!-- <a routerLink="/list"><input type="submit" value="List of courses" class="btn btn-primary mx-1" ></a> -->
     </div>
     <p *ngIf="!(Results.length!=0 && GotResult)" class="text-danger">No Result to Show</p>
 </div>

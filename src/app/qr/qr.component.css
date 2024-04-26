@@ -1,5 +1,7 @@
 h1{
-    color:blueviolet
+    color:blueviolet;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.8rem;
 }*{
     margin: 0;
     padding: 0;
@@ -10,6 +12,7 @@ h1{
     font-family: sans-serif;
     overflow: hidden;
     user-select: none;
+    background-color: lavender;
   }
   nav .logo{
     color: white;
@@ -81,4 +84,14 @@ h1{
     background-position: center;
     background-size: cover;
     height: 100vh;
+  }
+   p{
+  
+    color: red;
+    font-size: 1.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  a{
+    font-size: 1.5rem;
+    text-decoration: none;
   }

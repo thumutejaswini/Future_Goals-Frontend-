@@ -28,10 +28,10 @@
        
             <td><input type="button" role="button" class="btn btn-danger" value="delete" (click)="Delete(Data[0])">
             </td>
-            <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="Read1( Data[0])">
+            <!-- <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" (click)="Read1( Data[0])">
                     Update
                 </button>
-            </td>
+            </td> -->
         </tr>
     </tbody>
   </table>
@@ -49,10 +49,9 @@
           <input type="text" name="course_duration" id="course_duration" placeholder="course_duration" class="form-control my-1" [(ngModel)]="UpdatedUser.course_duration">
 
         </div>
-        <div class="modal-footer">
+        <!-- <div class="modal-footer">
           <button type="button" class="btn btn-primary"  data-bs-dismiss="modal" (click)="Update(course_name,UpdatedUser)">Save changes</button>
-          
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
